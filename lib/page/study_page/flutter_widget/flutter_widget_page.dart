@@ -27,10 +27,8 @@ class _FlutterWidgetPageState extends State<FlutterWidgetPage> {
       ListItemModel('RaisedButton', () {}),
       ListItemModel('Scaffold', () {}),
       ListItemModel('Appbar', () {}),
-      ListItemModel('FlutterLogo', () {
-       return Router.toPage(context, 'flutterlogoPage');
-      }),
-      ListItemModel('Placeholder', () {}),
+      ListItemModel('FlutterLogo', () => Router.toPage(context, 'flutterlogoPage')),
+      ListItemModel('Placeholder', () => Router.toPage(context, 'placeholderPage')),
       ListItemModel('AnimatedAlign', () {}),
       ListItemModel('AnimatedBuilder', () {}),
       ListItemModel('AnimatedContainer', () {}),
